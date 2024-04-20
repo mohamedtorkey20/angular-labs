@@ -1,0 +1,76 @@
+{
+  "students": [
+    {
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "phone": "0111111111111111",
+      "GPA": "3.4",
+      "level": "one",
+      "id": "08fa"
+    },
+    {
+      "name": "mohamed torkey",
+      "phone": "02222222222",
+      "email": "mohamed@gmail.com",
+      "gpa": "2.4",
+      "level": "two",
+      "id": "7b06"
+    },
+    {
+      "name": "omarali",
+      "phone": "03333333333",
+      "email": "omar@gmail.com",
+      "gpa": "3.2",
+      "level": "one",
+      "id": "c82e"
+    },
+    {
+      "name": "Ali",
+      "email": "ali@gmail.com",
+      "phone": "04444444444444",
+      "GPA": "3.4",
+      "level": "one",
+      "id": "9c09"
+    },
+    {
+      "name": "mona",
+      "email": "mona@gmail.com",
+      "phone": "0555555555555555",
+      "GPA": "2.8",
+      "level": "two",
+      "id": "65f8"
+    },
+    {
+      "name": "karim",
+      "email": "karim@gmail.com",
+      "phone": "07777777777777",
+      "GPA": "3.1",
+      "level": "three",
+      "id": "f0d2"
+    },
+    {
+      "id": "2a35",
+      "name": "torkey",
+      "phone": "0777777777",
+      "email": "torkey@gmal.com",
+      "gpa": "3.3",
+      "level": "four"
+    },
+    {
+      "id": "45de",
+      "name": "ali",
+      "phone": "09999999",
+      "email": "ali@gmail.com",
+      "gpa": "3",
+      "level": "two"
+    },
+    {
+      "id": "ebc6",
+      "name": "safaa",
+      "phone": "0999999999",
+      "email": "safaa@gmail",
+      "gpa": "3.3",
+      "level": "four"
+    }
+  ]
+}

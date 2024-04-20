@@ -1,0 +1,21 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black   text-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand"  [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/students">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link"  [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/students">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/addStudent">add student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/hamd">Error</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

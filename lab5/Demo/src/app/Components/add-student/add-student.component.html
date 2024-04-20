@@ -1,0 +1,63 @@
+
+<section class="bg-light p-3 p-md-5 p-sm-5 mt-5">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-7">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <h1 class="mb-4 col-5 offset-4">Add User</h1>
+                      <form  [formGroup]="form">
+
+                          <div class="mb-3 col-5 offset-3">
+                              <label for="name" class="form-label">Name</label>
+                              <input type="text" formControlName="name" class="form-control form-control-md" #name placeholder="Enter Your name">
+                              @if (!nameValid ) {
+                              <div class="text-danger">Name Invalid</div>
+                              }
+                          </div>
+
+                          <div class="mb-3 col-5 offset-3">
+                            <label for="name" class="form-label">Email</label>
+                            <input type="email"formControlName="email" class="form-control form-control-md" #email placeholder="Enter Your email">
+                            @if (!emailValid ) {
+                              <div class="text-danger">Email Invalid</div>
+                              }
+                         </div>
+
+                         <div class="mb-3 col-5 offset-3">
+                          <label for="phone" class="form-label">Mobile phone</label>
+                          <input type="text"formControlName="phone" class="form-control form-control-md" #phone placeholder="Enter Your age">
+                          @if (!phoneValid ) {
+                            <div class="text-danger">phone Invalid </div>
+                            }
+                        </div>
+
+                          <div class="mb-3 col-5 offset-3">
+                            <label for="GPA" class="form-label">GPA</label>
+                            <input type="text"formControlName="gpa" class="form-control form-control-md" #gpa placeholder="Enter Your age">
+                            @if (!gpaValid ) {
+                              <div class="text-danger">GPA Invalid rang</div>
+                              }
+                          </div>
+                          <div class="mb-3 col-5 offset-3">
+                            <label for="level" class="form-label">Level</label>
+                            <input type="text"formControlName="level" class="form-control form-control-md" #level placeholder="Enter Your age">
+                            @if (!levelValid) {
+                              <div class="text-danger">Level Invalid rang</div>
+                              }
+                          </div>
+
+
+                       <div class="mb-3 col-6 offset-3">
+                         <input type="submit" [disabled]="!form.valid"
+                         (click)="addStudent()"
+                         disabled class="btn btn-primary  mt-4" value="Add">
+
+                       </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

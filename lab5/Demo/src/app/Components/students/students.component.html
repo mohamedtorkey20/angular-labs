@@ -1,0 +1,28 @@
+
+<section class="bg-light   mt-5">
+  <div class="container" >
+      <div class="row justify-content-center" >
+          <div class="col-lg-10 mt-5">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap"  style="min-height: 450px;">
+
+
+                        @for (std of students; track std.id) {
+                          <app-one-student [student]="std"></app-one-student>
+                        }
+
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="d-flex justify-content-end mx-5" style="margin-top: -30px;">
+
+  <a routerLink="/addStudent"><img src="https://cdn-icons-png.flaticon.com/512/3303/3303893.png" width="50px" alt=""></a>
+
+</div>
+

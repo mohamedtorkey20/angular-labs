@@ -1,0 +1,66 @@
+<section class="bg-light p-3 p-md-5 p-sm-5 mt-5 ">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-7">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center ">
+                      <div class="text-center">
+
+
+                              @if (student) {
+
+                                <p>Name:{{student.name}}</p>
+                                <p>Email:{{student.email}}</p>
+                                <p>Phone:{{student.phone}}</p>
+                                <p>GPA:{{student.GPA}}</p>
+                                <p>Level:{{student.level}}</p>
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div class="mb-3 col-6 offset-3">
+                                    <input type="submit" (click)="UpdateStudent(student.id)" class="btn btn-primary  mt-4" value="Update student">
+                                  </div>
+
+
+
+                                </div>
+                              }
+
+
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+</section>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
